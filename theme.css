@@ -87,3 +87,30 @@ code { background: #f0ece0; color: var(--accent); }
 .term pre { color: var(--deep); }
 .term pre b { color: var(--yellow); }
 .term pre span { color: #a29d90; }
+
+/* ---------- Key Features: flight-themed mini visuals (replace the old console windows) ---------- */
+.fx { min-height: 92px; padding: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; overflow: hidden;
+  border: 1.5px solid var(--text); border-radius: 8px; background: var(--panel); color: var(--text); font: 600 11px 'JetBrains Mono', monospace; }
+.fx.col { flex-direction: column; gap: 9px; }
+.fx-row { display: flex; align-items: center; gap: 8px; width: 100%; justify-content: center; }
+.fx-row.between { justify-content: space-between; }
+.fx-code { font: 800 20px 'JetBrains Mono', monospace; letter-spacing: 1px; }
+.fx-time { font: 800 18px 'JetBrains Mono', monospace; }
+.fx-line { flex: 1; position: relative; border-top: 2px dashed var(--text); }
+.fx-line::after { content: '✈︎'; position: absolute; left: 50%; top: -13px; transform: translateX(-50%); padding: 0 4px; background: var(--panel); color: var(--accent); font-size: 16px; }
+.fx-meta { font-size: 10px; color: var(--muted); }
+.fx-price { font: 800 13px 'JetBrains Mono', monospace; color: var(--accent); }
+.pill { padding: 2px 9px; border: 1.5px solid var(--text); border-radius: 99px; font-size: 10px; background: #fff; }
+.pill.on { background: var(--text); color: var(--yellow); }
+.pill.ghost { border-style: dashed; background: transparent; }
+.fx-tag { position: relative; display: flex; flex-direction: column; align-items: center; padding: 6px 24px 6px 30px; background: var(--yellow); border: 1.5px solid var(--text); border-radius: 8px; }
+.fx-tag i { position: absolute; left: 8px; top: 50%; width: 9px; height: 9px; margin-top: -5px; border: 1.5px solid var(--text); border-radius: 50%; background: var(--panel); }
+.fx-tag b { font: 800 26px 'JetBrains Mono', monospace; letter-spacing: 3px; }
+.fx-tag span { font-size: 9px; }
+.fx-mini { position: relative; flex: 1; padding: 14px 4px 6px; text-align: center; background: #fff; border: 1.5px solid var(--text); border-radius: 6px; }
+.fx-mini b { display: block; font: 800 16px 'JetBrains Mono', monospace; }
+.fx-mini span { font-size: 10px; color: var(--muted); }
+.fx-mini.best { background: var(--yellow); }
+.fx-mini.best span { color: var(--text); }
+.fx-mini em { position: absolute; top: 2px; left: 0; right: 0; font-style: normal; font-size: 7px; letter-spacing: 1px; }
+.fx-btn { padding: 7px 16px; border-radius: 99px; background: var(--text); color: var(--yellow); font: 700 11px 'JetBrains Mono', monospace; }
