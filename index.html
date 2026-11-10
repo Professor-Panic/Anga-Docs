@@ -78,11 +78,10 @@
           <tr><th>Role</th><th>Permissions</th></tr>
           <tr><td>Guest user</td><td>Search, view results, sort, filter and compare up to three flights — no account needed</td></tr>
           <tr><td>Registered user</td><td>Everything a guest can do, plus saved flights and personal search history where implemented</td></tr>
-          <tr><td>Administrator</td><td>Not required for the MVP; permissions must be defined separately if introduced</td></tr>
         </table>
         <div class="callout">
           <span class="callout-label mono">STAKEHOLDERS</span>
-          <p>The development team, Moringa School instructors and mentors, SerpApi, and the airlines and booking providers shown in results. A user may only view, add or remove saved flights linked to their own account.</p>
+          <p>The development team, and the airlines and booking providers shown in results.</p>
         </div>
       </div>
     </div></section>
@@ -161,10 +160,6 @@
           <tr><td>Could have</td><td>Search history; currency switcher; price alerts and history; airport info and maps</td></tr>
           <tr><td>Not in this release</td><td>Payments, ticket issuance, reservations, refunds, guaranteed real-time availability, airline inventory management, live aircraft tracking</td></tr>
         </table>
-        <div class="callout">
-          <span class="callout-label mono">SCOPE PROTECTION</span>
-          <p>Addendum v1.1 only clarifies existing requirements. Nothing from the “not in this release” list enters the MVP unless the team formally changes and approves the scope.</p>
-        </div>
       </div>
     </div></section>
 
@@ -179,7 +174,7 @@
           <tr><td>Data</td><td>PostgreSQL</td><td>Accounts, saved flights, search history. Live flight results are not stored permanently</td></tr>
         </table>
         <div class="callout">
-          <p>The browser never talks to SerpApi, which keeps <code>SERPAPI_API_KEY</code> on the server. Provider responses are normalised into one format so the frontend is not coupled to raw provider fields. Identical searches are cached for about 10 minutes and requests are rate-limited to protect quota.</p>
+          <p>Provider responses from SerpAPI and OpenSkyNetwork are normalised into one format. Identical searches are cached for about 10 minutes.</p>
         </div>
       </div>
     </div></section>
@@ -224,7 +219,7 @@
       </div>
     </div></section>
 
-    <section class="doc-section doc-card wide" id="team" data-short="Team"><div class="pass-stub"><span class="stub-label mono">SECTION</span><span class="stub-num">13</span><span class="stub-of mono">OF 13</span><span class="stub-title">Meet Team Uzima</span><div class="barcode"></div></div><div class="card-body">
+    <section class="doc-section doc-card wide" id="team" data-short="Team"><div class="pass-stub"><span class="stub-label mono">SECTION</span><span class="stub-num">13</span><span class="stub-of mono">OF 13</span><span class="stub-title">Meet the Team</span><div class="barcode"></div></div><div class="card-body">
       <div class="doc-inner">
         <div class="kicker mono">13 · Team</div>
         <div class="card-heading"><span class="card-number">--</span><h2>Meet The Team</h2></div>
