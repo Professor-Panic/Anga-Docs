@@ -75,7 +75,7 @@
         <p class="lede">Target groups are individual travellers, business travellers, students and frequent travellers.</p>
         <table>
           <tr><th>Role</th><th>Permissions</th></tr>
-          <tr><td>Guest user</td><td>Search, view results, sort, filter and compare up to three flights — no account needed</td></tr>
+          <tr><td>Guest user</td><td>Search, view results, sort, filter and compare different flights.</td></tr>
           <tr><td>Registered user</td><td>Everything a guest can do, plus saved flights and personal search history where implemented</td></tr>
         </table>
         <div class="callout">
@@ -106,7 +106,7 @@
         <p class="lede">Anga360 pulls flight data from the <strong>SerpApi Google Flights API</strong> through its own FastAPI backend, normalises it, and presents it in a responsive React interface.</p>
         <div class="triad">
           <div class="triad-card"><div class="triad-icon">🔍</div><h3>Search</h3><p>One-way and round-trip search with airport lookup, validation, passengers and cabin class.</p></div>
-          <div class="triad-card"><div class="triad-icon">⚖️</div><h3>Compare</h3><p>Sort, filter, and compare up to three flights side by side on price, duration, stops and more.</p></div>
+          <div class="triad-card"><div class="triad-icon">⚖️</div><h3>Compare</h3><p>Sort, filter, and compare flights side by side on price, duration, stops and more.</p></div>
           <div class="triad-card"><div class="triad-icon">🎫</div><h3>Continue</h3><p>Follow the provider link to the airline or booking site. Anga360 never sells tickets or takes payment.</p></div>
         </div>
       </div>
@@ -136,7 +136,7 @@
           <div class="feature-card"><div class="fx col"><div class="fx-row"><span class="fx-code">NBO</span><span class="fx-line"></span><span class="fx-code">MBA</span></div><div class="fx-row"><span class="pill on">One-way</span><span class="pill">Round trip</span></div></div><h3>FR-02/03/04 · Search &amp; Validation</h3><p>Search stays disabled until valid. Identical airports, past dates and a return before departure are rejected in browser and on the server.</p></div>
           <div class="feature-card"><div class="fx col"><div class="fx-row"><span class="fx-time">08:30</span><span class="fx-line"></span><span class="fx-time">11:45</span></div><div class="fx-row between"><span class="fx-meta">3h 15m · 1 stop</span><span class="fx-price">KES 12,400</span></div></div><h3>FR-05 · Results Display</h3><p>Each card shows airline, logo, times, duration, stops, price and currency. Missing fields never break a card.</p></div>
           <div class="feature-card"><div class="fx col"><div class="fx-row"><span class="pill on">Cheapest</span><span class="pill">Fastest</span><span class="pill">Earliest</span></div><div class="fx-row"><span class="pill ghost">Airline ▾</span><span class="pill ghost">Stops ▾</span></div></div><h3>FR-06/07 · Sort &amp; Filter</h3><p>Sort by lowest price, shortest duration or departure time. Filter by airline and stops.</p></div>
-          <div class="feature-card"><div class="fx"><div class="fx-mini best"><em>BEST PRICE</em><b>A</b><span>12.4k</span></div><div class="fx-mini"><b>B</b><span>13.1k</span></div><div class="fx-mini"><b>C</b><span>15.9k</span></div></div><h3>FR-08 · Compare Up To Three</h3><p>View selected flights side by side, remove one and add another. A fourth selection is blocked.</p></div>
+          <div class="feature-card"><div class="fx"><div class="fx-mini best"><em>BEST PRICE</em><b>A</b><span>12.4k</span></div><div class="fx-mini"><b>B</b><span>13.1k</span></div><div class="fx-mini"><b>C</b><span>15.9k</span></div></div><h3>FR-08 · Compare flights</h3><p>View selected flights side by side, remove one and add another. A fourth selection is blocked.</p></div>
           <div class="feature-card"><div class="fx col"><span class="fx-btn">Book with provider ↗</span><span class="fx-meta">Searched 14:02 · prices may change</span></div><h3>FR-09/10 · Booking Links &amp; Price Notice</h3><p>Provider links open in a new tab (hidden if none exists). The search time and a price-may-change notice are always shown.</p></div>
         </div>
       </div>
@@ -148,7 +148,7 @@
         <div class="card-heading"><span class="card-number">--</span><h2>Scope</h2></div>
         <table>
           <tr><th>Priority</th><th>Scope</th></tr>
-          <tr><td>Must have</td><td>One-way and round-trip search; results; sorting and filtering; compare up to three; provider links; validation and error handling; responsive UI</td></tr>
+          <tr><td>Must have</td><td>One-way and round-trip search; results; sorting and filtering; compare between differen flight; provider links; validation and error handling; responsive UI</td></tr>
           <tr><td>Should have</td><td>Register, log in and out; save, list and remove flights</td></tr>
           <tr><td>Could have</td><td>Search history; currency switcher; price alerts and history; airport info and maps</td></tr>
           <tr><td>Not in this release</td><td>Payments, ticket issuance, reservations, refunds, guaranteed real-time availability, airline inventory management, live aircraft tracking</td></tr>
