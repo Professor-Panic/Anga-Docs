@@ -12,7 +12,7 @@
 .doc-card.far { opacity: 0; pointer-events: none; }
 .doc-card::after { display: none; }
 .doc-card::before { /* top stripe (width:auto overrides the old 1px line from style.css) */
-  content: ''; position: absolute; top: 0; left: 0; right: 0; width: auto; height: 6px; z-index: 31;background:var(--accent-2) ;
+  content: ''; position: absolute; top: 0; left: 0; right: 0; width: auto; height: 6px; z-index: 31;background:rgba(0,0,0,0) ;
 }
 
 .pass-stub {
